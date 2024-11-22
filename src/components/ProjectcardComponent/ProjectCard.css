@@ -1,0 +1,45 @@
+.project-card-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  box-shadow: 2px 2px 2px 2px rgb(212, 212, 212);
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  
+}
+
+.project-card-image {
+  height: 9rem;
+  width: 10.5rem;
+  border-radius: 10px;
+  background-color: #7e22ce;
+  display: flex;
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+}
+
+.inner-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inner-div > p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1100px) {
+  .project-card-image {
+    width: 12rem;
+  }
+}

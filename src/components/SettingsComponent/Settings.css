@@ -1,0 +1,30 @@
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+}
+
+.settings-div {
+  display: flex;
+  justify-content: space-start;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.settings-inner-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.setting-inputs{
+  height: 2rem;
+  border: 1px solid;
+  border-radius: 10px;
+}

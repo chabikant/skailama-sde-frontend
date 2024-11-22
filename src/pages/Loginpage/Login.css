@@ -1,0 +1,191 @@
+.outer-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-div-image {
+  height: 100%;
+  width: 100%;
+  /* opacity: 0.6; */
+  background-image: url("/background.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.left-div {
+  height: 100%;
+  width: 70%;
+  background: linear-gradient(231.62deg, #c37eff -26.53%, #3a0b63 117.16%);
+  position: relative;
+  z-index: 0;
+}
+
+.left-div-text {
+  color: white;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.right-div {
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5rem;
+}
+
+.right-first-div {
+  display: flex;
+  flex-direction: column;
+  height: 34%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.right-second-div {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.line-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19rem;
+}
+
+.google-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Input Styles */
+.input-container {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.custom-input {
+  width: 100%;
+  height: 2rem;
+  border: 0.5px solid;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.open-modal-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #7e22ce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #7e22ce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.close-btn {
+  padding: 0.5rem 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .right-div {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+  }
+}
